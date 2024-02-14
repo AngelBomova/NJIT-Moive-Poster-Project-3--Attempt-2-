@@ -34,7 +34,9 @@ const vue_app = Vue.createApp({
             // This holds your movies.json data.
             movies: [],
             /* ADD ADDITIONAL VARIABLES FOR STEP 3 HERE */
-         
+         title: 'IMDB + Angel’s Top 8 Movies'
+         owner: 'Angel'
+        github: 'https://angelbomova.github.io/NJIT-Moive-Poster-Project-3--Attempt-2-/' 
       }
     },
       methods: {
