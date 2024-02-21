@@ -108,6 +108,30 @@ else{
                   releaseDate= monthName +'' + dataArray[2]+','+ dataArray[0];
                   return releaseDate;
             }
+            like: function(index){
+                  this.movies[index].likes += 1;
+            },
+            dislike: function(index){
+                  this.movies[index].dislikes -= 1;
+            },
+
+            posterClick: function(index){
+                  var currentPosterIndex = this.movies[index].posterindex;
+                  var currentPoster = this.movies[index].posters.length - 1;
+
+                  if(currentPosterIndex < currentPoster){
+                        this.movies[index].posterindex += 1;
+                  }
+                  else{
+                        this.movies[index].posterindex = 0;
+                  }
+            },
+
+            timeText: function(minutes){
+                  var hours = Math.floor(minutes/60);
+                  var mins = minutes%60;
+                  return (hours + "h " + mins + "m");
+            }
       }
 })
 

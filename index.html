@@ -41,7 +41,7 @@
 	        <div class="col-md-6">
 	            <div class="thumbnail">
 
-						<img class="poster img-fluid" />
+						<img class="poster"v-on:click="{{posterClick(index)}}" v-bind:src="movie.posters[movie.posterindex]"/>
 						<div class="imageInfo">Poster{{movie.posterindex+1}}of {{movie.posters.length}}</div>
 
 						<p class="title">{movie.{title}} ({{movie.country}})</p>
