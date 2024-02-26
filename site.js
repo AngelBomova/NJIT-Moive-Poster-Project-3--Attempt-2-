@@ -37,108 +37,13 @@ const vue_app = Vue.createApp({
             // This holds your movies.json data.
             movies: [],
             /* ADD ADDITIONAL VARIABLES FOR STEP 3 HERE */
-         title: "IMBD + Angel Bomova’s Top 8 Movies",
-         owner: "Angel Bomova",
-         github: ''
+         
       }
     },
-
-    like: function(index){
-      this.movies[index].likes += 1;
-    },
-
-    dislike: function(index){
-this.movies[index].dislikes -= 1;
-    },
-
-    posterClick: function(index){
-var currentPosterIndex = this.movies[index].posterIndex;
-var currentPoster = this.movies[index].posters.length - 1;
-
-if(currentPosterIndex < currentPoster){
-      this.movies[index].posterindex += 1;
-}
-else{
-      this.movies[index].posterindex = 0;
-}
-    },
-
-
-    timeText: function(minutes){
-      var hours = Math.floor(minutes/60);
-      var mins = minutes%60;
-      return (hours + "h " + mins + "m");
-    }
-}
-})
-
       methods: {
             /* ADD FUNCTIONS/METHODS FOR STEP 7 HERE */
-            getMonthText: function(dataArray){
-                  var nameOfMonth;
-                  var releaseDate;
-
-                  switch (dateArray[1]){
-                        case 1: monthName= 'January';
-                        break;
-                        case 2: monthName = 'February';
-                        break;
-                        case 2: monthName = 'March';
-                        break;
-                        case 2: monthName = 'April';
-                        break;
-                        case 2: monthName = 'May';
-                        break;
-                        case 2: monthName = 'June';
-                        break;
-                        case 2: monthName = 'July';
-                        break;
-                        case 2: monthName = 'August';
-                        break;
-                        case 2: monthName = 'September';
-                        break;
-                        case 2: monthName = 'October';
-                        break;
-                        case 2: monthName = 'November';
-                        break;
-                        case 2: monthName = 'December';
-                        break;
-                        default: monthName = 'N/A';
-                  }
-                  releaseDate= monthName +'' + dataArray[2]+','+ dataArray[0];
-                  return releaseDate;
-            }
-            like: function(index){
-                  this.movies[index].likes += 1;
-            },
-            dislike: function(index){
-                  this.movies[index].dislikes -= 1;
-            },
-
-            posterClick: function(index){
-                  var currentPosterIndex = this.movies[index].posterindex;
-                  var currentPoster = this.movies[index].posters.length - 1;
-
-                  if(currentPosterIndex < currentPoster){
-                        this.movies[index].posterindex += 1;
-                  }
-                  else{
-                        this.movies[index].posterindex = 0;
-                  }
-            },
-
-            timeText: function(minutes){
-                  var hours = Math.floor(minutes/60);
-                  var mins = minutes%60;
-                  return (hours + "h " + mins + "m");
-            }
       }
 })
 
 
 vue_app.mount("#vue_app")
-
-
-
-
-
