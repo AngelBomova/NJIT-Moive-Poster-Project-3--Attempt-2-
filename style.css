@@ -5,13 +5,14 @@ body {
     padding: 0;
     width: 100%;
     overflow: auto;
-    background-image: url(img/geometry.jpg);
+    background-image: url(img/moviebackground.jpg);
 }
 
 
 /* This stylizes the header area */
 .header {
     padding: 15px;
+    text-align: center;
 }
 .header h1 {
     display: inline-block;
@@ -30,17 +31,17 @@ body {
 .thumbnail {
     border: 0px;
     position: relative;
-    padding: 20px;
-    margin: 20px;
+    width: 100%;
+    padding: 2%;
     border-radius: 0;
-    background-color:#dddddd;
+    background-color: #dddddd;
+    text-align: center;
 }
 .thumbnail img {
-    margin-top: 10px;
-    margin-bottom: 30px;
-    padding: 5px;
     border: 2px dashed black;
-}
+    margin: 2%;
+    text-align: center;
+}s
 
 
 /* This stylizes your "Poster X of Y" text */
@@ -83,6 +84,7 @@ body {
     position: absolute;
     top: 50px;
     right: 25px;
+    border-radius: 50%;
 }
 
 
@@ -130,3 +132,19 @@ body {
 
 
 /* ADD YOUR LIKE AND DISLIKE HOVER/MOUSEOVER CSS CODE HERE */
+.likes {
+    background-color: #008700;
+    color: #ffffff;
+}
+.likes:hover {
+    background-color: #9edd87;
+    color: #008700;
+}
+.dislikes {
+    background-color: #f65a5b;
+    color: #ffffff;
+}
+.dislikes:hover {
+    background-color: #fdd6d6;
+    color: #f65a5b;
+}

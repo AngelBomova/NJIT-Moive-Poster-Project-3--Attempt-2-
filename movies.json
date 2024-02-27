@@ -68,5 +68,50 @@
             "likes": 812,
             "dislikes": 101,
             "posterindex": 0
+      },
+      {
+            "title": "Mortal Kombat",
+            "iscore": 9.0,
+            "rating": "R",
+            "runtime": 110,
+            "released": [2021, 4, 21],
+            "country": "USA",
+            "posters": ["img/mortalkombatmovie.jpg", "img/mortalkombatmovie.jpg"],
+            "imdb": "https://www.imdb.com/title/tt0293429/?ref_=nv_sr_srsg_0_tt_8_nm_0_q_mortal%2520kombat%2520",
+            "website": "https://www.warnerbros.com/movies/mortal-kombat-2021",
+            "likes": 9000,
+            "dislikes": 1000,
+            "posterindex": 0
+      },
+
+      {
+            "title": "Lion King",
+            "iscore": 9.5,
+            "rating": "G",
+            "runtime": 89,
+            "released": [1994, 6, 24],
+            "country": "USA",
+            "posters": ["img/lionking.jpg", "img/lionking.jpg"],
+            "imdb": "https://www.imdb.com/title/tt0110357/?ref_=fn_al_tt_1",
+            "website": "https://movies.disney.com/the-lion-king",
+            "likes": 929,
+            "dislikes": 125,
+            "posterindex": 0
+      },
+
+      {
+            "title": "Mortal Kombat",
+            "iscore": 9.0,
+            "rating": "R",
+            "runtime": 110,
+            "released": [2021, 4, 21],
+            "country": "USA",
+            "posters": ["img/mortalkombatmovie.jpg", "img/mortalkombatmovie.jpg"],
+            "imdb": "https://www.imdb.com/title/tt0293429/?ref_=nv_sr_srsg_0_tt_8_nm_0_q_mortal%2520kombat%2520",
+            "website": "https://www.warnerbros.com/movies/mortal-kombat-2021",
+            "likes": 9000,
+            "dislikes": 1000,
+            "posterindex": 0
       }
+
 ]
