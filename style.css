@@ -55,6 +55,10 @@ body {
 
 
 /* This stylizes your Title and Rating Text */
+#app_title {
+    color: rgb(255, 255, 255);
+    background-color: black;
+}
 .title,
 .released {
     color: #444;
